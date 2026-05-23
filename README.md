@@ -25,10 +25,16 @@ On Unix/macOS:
 - `GET /api/options/{optionId}/entries`
   - Returns all entries for the option with the given UUID.
 
+Swagger UI:
+
+```bash
+http://localhost:8081/swagger-ui/index.html
+```
+
 Example:
 
 ```bash
-curl "http://localhost:8080/api/options/search?name=currency&tags=client"
+curl "http://localhost:8081/api/options/search?name=currency&tags=client"
 ```
 
 ## Database

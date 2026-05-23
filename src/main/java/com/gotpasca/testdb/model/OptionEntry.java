@@ -7,7 +7,7 @@ import org.hibernate.annotations.UuidGenerator;
 import java.util.UUID;
 
 @Entity
-@Table(name = "option_entry", indexes = @Index(name = "idx_option_entry_option_id", columnList = "option_id"))
+@Table(name = "option_entry", schema = "ONBOARDING", indexes = @Index(name = "idx_option_entry_option_id", columnList = "option_id"))
 @Getter
 @Setter
 @NoArgsConstructor

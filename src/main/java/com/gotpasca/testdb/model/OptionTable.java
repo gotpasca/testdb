@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.UUID;
 
 @Entity
-@Table(name = "option_table", uniqueConstraints = @UniqueConstraint(columnNames = {"name", "tags"}))
+@Table(name = "option_table", schema = "ONBOARDING", uniqueConstraints = @UniqueConstraint(columnNames = {"name", "tags"}))
 @Getter
 @Setter
 @NoArgsConstructor
