@@ -1,0 +1,9 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: gotpasca
+      sqlFile:
+        path: db/changelog/initial-schema.sql
+        relativeToChangelogFile: false
+        splitStatements: true
+        stripComments: true

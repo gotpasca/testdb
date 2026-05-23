@@ -1,0 +1,17 @@
+options_table
+id as UUID auto generate,name as varchar(128),tags as varch(128)
+1,currency,client
+2,countries,user
+primary key = name+tags
+
+
+option_entry
+ID as UUID auto generate,option_id as UUID, data as vachar(1024)
+1,1{"key":"USD","value":"Dollar")
+2,1("key":"EURO","value":"Euro")
+3,2{"key":"FR","value":"France")
+3,2("key":"EN","value":"England")
+
+Foreign key option_entry.option_id is in option_table.id
+index on option_entry.option_id
+
